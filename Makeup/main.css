@@ -1,0 +1,137 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: all 0.3s;
+}
+
+body {
+    background: #0261BF;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    padding: 1em 5em;
+    height: 20vh;
+}
+
+nav img {
+    width: 80%;
+}
+
+nav div.links {
+    margin-left: auto;
+}
+
+nav div.links a {
+    color: #fff;
+    text-decoration: none;
+    padding: 1em;
+}
+
+div.main {
+    height: 80vh;
+    display: flex;
+    padding: 0 5em;
+    padding-top: 1em;
+    ;
+}
+
+div.main div.content {
+    width: 50%;
+}
+
+div.main div.content h1,
+div.main div.content h2 {
+    color: #fff;
+    font-size: 4.3em;
+    text-transform: uppercase;
+    font-weight: 900;
+
+
+}
+
+div.main div.content h1 {
+    font-size: 8em;
+    margin-top: -0.4em;
+}
+
+
+div.main div.content p {
+    color: #fff;
+}
+
+div.main div.content button {
+    margin-top: 1em;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 5000px;
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: 700;
+    color: #504546;
+}
+
+div.main div.image {
+    width: 50%;
+    background-image: url(../Misc/Images/pepsi001.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: auto 90%;
+}
+
+
+div.SelectPanel {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+input[type=radio]#normal,
+input[type=radio]#diet,
+input[type=radio]#zero {
+    display: none;
+}
+
+div.SelectPanel label img {
+    width: 2.5em;
+    margin: 0 1em;
+    cursor: pointer;
+}
+
+div.SelectPanel label img:hover {
+    margin-bottom: 1em;
+
+}
+
+input[type=radio]#normal:checked~div.main,
+input[type=radio]#normal:checked~nav {
+    background: #0261BF;
+}
+
+input[type=radio]#diet:checked~div.main,
+input[type=radio]#diet:checked~nav {
+    background: #E60C2D;
+}
+
+input[type=radio]#zero:checked~div.main,
+input[type=radio]#zero:checked~nav {
+    background: #1F1E1F;
+}
+
+input[type=radio]#normal:checked~div.main div.image {
+    background-image: url(../Misc/Images/pepsi001.png);
+}
+
+input[type=radio]#diet:checked~div.main div.image {
+    background-image: url(../Misc/Images/pepsi002.png);
+}
+
+input[type=radio]#zero:checked~div.main div.image {
+    background-image: url(../Misc/Images/pepsi003.png);
+}
