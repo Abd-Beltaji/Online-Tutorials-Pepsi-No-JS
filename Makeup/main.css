@@ -78,7 +78,7 @@ div.main div.content button {
 
 div.main div.image {
     width: 50%;
-    background-image: url(../master/Misc/Images/pepsi001.png);
+    background-image: url(../Misc/Images/pepsi001.png);
     background-position: top center;
     background-repeat: no-repeat;
     background-size: auto 90%;
@@ -125,13 +125,13 @@ input[type=radio]#zero:checked~nav {
 }
 
 input[type=radio]#normal:checked~div.main div.image {
-    background-image: url(../master/Misc/Images/pepsi001.png);
+    background-image: url(../Misc/Images/pepsi001.png);
 }
 
 input[type=radio]#diet:checked~div.main div.image {
-    background-image: url(../master/Misc/Images/pepsi002.png);
+    background-image: url(../Misc/Images/pepsi002.png);
 }
 
 input[type=radio]#zero:checked~div.main div.image {
-    background-image: url(../master/Misc/Images/pepsi003.png);
+    background-image: url(../Misc/Images/pepsi003.png);
 }
